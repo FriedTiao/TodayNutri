@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于我们 - 营养餐推荐</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <style>
+    .about-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .about-header {
+      text-align: center;
+      padding: 40px 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      margin-bottom: 30px;
+    }
+
+    .about-header h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .about-section {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      margin-bottom: 20px;
+    }
+
+    .about-section h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: var(--text-dark);
+    }
+
+    .about-section p {
+      line-height: 1.8;
+      color: var(--text-light);
+      margin-bottom: 15px;
+    }
+
+    .about-section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .about-section li {
+      padding: 10px 0;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    .about-section li:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--primary-color);
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .warning-box {
+      background: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+
+    .warning-box h3 {
+      color: #856404;
+      margin-bottom: 10px;
+    }
+
+    .warning-box p {
+      color: #856404;
+      margin: 8px 0;
+    }
+
+    .back-button {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="about-container">
+    <button class="btn btn-primary back-button" onclick="location.href='index.html'">← 返回首页</button>
+
+    <div class="about-header">
+      <h1>🍽️ 关于营养餐推荐</h1>
+      <p>让每一餐都营养均衡，告别选择困难和重复疲劳</p>
+    </div>
+
+    <div class="about-section">
+      <h2>📖 产品介绍</h2>
+      <p>
+        营养餐推荐是一个专注于提供每日营养均衡餐食建议的网站。我们为不知道下一顿吃什么的人，
+        提供经过营养认证的早中晚餐搭配方案，确保每天不重样、吃得饱、有营养。
+      </p>
+      <p>
+        我们的目标用户包括独居上班族、学生党、家庭主妇/主夫以及健身/减脂人群。
+        通过科学的营养配比和丰富的家常菜谱，帮助大家解决"营养焦虑"和"重复疲劳"的问题。
+      </p>
+    </div>
+
+    <div class="about-section">
+      <h2>📚 数据来源说明</h2>
+      <p>本网站所有菜谱及营养数据均综合参考以下权威平台：</p>
+      <ul>
+        <li><strong>美国农业部食品数据中心 (USDA FoodData Central)</strong> - 提供权威的食材营养数据</li>
+        <li><strong>Edamam 营养分析平台</strong> - 专业的营养成分分析工具</li>
+        <li><strong>下厨房、豆果美食</strong> - 知名食谱平台，提供菜谱参考</li>
+        <li><strong>《中国居民膳食指南》</strong> - 中国营养学会发布的权威指南</li>
+      </ul>
+      <p>
+        每道菜谱都经过多平台数据对比验证，营养成分数据取平均值。
+        具体来源详见每道菜品的"数据来源"标注。
+      </p>
+    </div>
+
+    <div class="about-section">
+      <h2>🎯 营养标准</h2>
+      <p>我们的推荐基于以下营养标准：</p>
+      <ul>
+        <li><strong>早餐</strong>：300-500 kcal（占全天25%）</li>
+        <li><strong>午餐</strong>：600-800 kcal（占全天40%）</li>
+        <li><strong>晚餐</strong>：500-700 kcal（占全天35%）</li>
+        <li><strong>全天总计</strong>：1400-2000 kcal（根据性别/活动量调整）</li>
+      </ul>
+    </div>
+
+    <div class="warning-box">
+      <h3>⚠️ 免责声明</h3>
+      <p>• 本网站提供的营养建议仅供参考，不构成医疗建议</p>
+      <p>• 个体营养需求因年龄、性别、活动量等因素而异</p>
+      <p>• 如有特殊饮食需求或健康问题，请咨询专业营养师或医生</p>
+      <p>• 食材过敏者请仔细查看配料表</p>
+      <p>• 本网站不对因使用本站信息而产生的任何后果承担责任</p>
+    </div>
+
+    <div class="about-section">
+      <h2>🚀 版本信息</h2>
+      <p><strong>当前版本</strong>：V1.0 MVP</p>
+      <p><strong>菜谱数量</strong>：30道家常菜（早中晚各10道）</p>
+      <p><strong>更新计划</strong>：我们将持续更新菜谱库，计划每月新增10道菜品</p>
+    </div>
+
+    <div class="about-section">
+      <h2>📧 联系我们</h2>
+      <p>如果您有任何建议、发现数据错误或想要贡献菜谱，欢迎联系我们。</p>
+      <p>我们期待您的反馈，帮助我们做得更好！</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,643 @@
+[
+  {
+    "id": "l001",
+    "name": "宫保鸡丁",
+    "category": "lunch",
+    "image": "./food/optimized/宫保鸡丁.jpg",
+    "description": "川菜经典，香辣下饭",
+    "cookTime": 25,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "鸡胸肉",
+        "amount": "200g"
+      },
+      {
+        "name": "花生米",
+        "amount": "50g"
+      },
+      {
+        "name": "干辣椒",
+        "amount": "10个"
+      },
+      {
+        "name": "葱姜蒜",
+        "amount": "适量"
+      },
+      {
+        "name": "酱油",
+        "amount": "20ml"
+      },
+      {
+        "name": "醋",
+        "amount": "10ml"
+      },
+      {
+        "name": "糖",
+        "amount": "5g"
+      }
+    ],
+    "steps": [
+      "鸡胸肉切丁，腌制10分钟",
+      "调制宫保汁（酱油、醋、糖、水淀粉）",
+      "热油炒花生米，盛出",
+      "炒鸡丁至变色，盛出",
+      "爆香干辣椒和葱姜蒜",
+      "倒入鸡丁和宫保汁，翻炒",
+      "加入花生米，快速翻炒出锅"
+    ],
+    "nutrition": {
+      "calories": 650,
+      "protein": 42,
+      "carbs": 35,
+      "fat": 38
+    },
+    "sources": [
+      {
+        "platform": "下厨房",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "USDA FoodData Central",
+        "dataType": "营养数据",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "川菜",
+      "高蛋白",
+      "下饭菜"
+    ]
+  },
+  {
+    "id": "l002",
+    "name": "红烧排骨",
+    "category": "lunch",
+    "image": "./food/optimized/红烧排骨.jpg",
+    "description": "家常硬菜，色泽红亮",
+    "cookTime": 45,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "排骨",
+        "amount": "500g"
+      },
+      {
+        "name": "生姜",
+        "amount": "3片"
+      },
+      {
+        "name": "八角",
+        "amount": "2个"
+      },
+      {
+        "name": "酱油",
+        "amount": "30ml"
+      },
+      {
+        "name": "料酒",
+        "amount": "20ml"
+      },
+      {
+        "name": "冰糖",
+        "amount": "15g"
+      }
+    ],
+    "steps": [
+      "排骨焯水去血沫",
+      "热油炒糖色",
+      "加入排骨翻炒上色",
+      "加入姜片、八角、酱油、料酒",
+      "加水没过排骨，大火烧开",
+      "转小火炖35分钟",
+      "大火收汁即可"
+    ],
+    "nutrition": {
+      "calories": 720,
+      "protein": 38,
+      "carbs": 28,
+      "fat": 48
+    },
+    "sources": [
+      {
+        "platform": "豆果美食",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "中国居民膳食指南",
+        "dataType": "营养标准",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "家常菜",
+      "硬菜",
+      "红烧"
+    ]
+  },
+  {
+    "id": "l003",
+    "name": "番茄牛腩",
+    "category": "lunch",
+    "image": "https://images.pexels.com/photos/3763816/pexels-photo-3763816.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "description": "酸甜开胃，营养丰富",
+    "cookTime": 60,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "牛腩",
+        "amount": "400g"
+      },
+      {
+        "name": "番茄",
+        "amount": "3个"
+      },
+      {
+        "name": "洋葱",
+        "amount": "半个"
+      },
+      {
+        "name": "姜片",
+        "amount": "3片"
+      },
+      {
+        "name": "番茄酱",
+        "amount": "30g"
+      }
+    ],
+    "steps": [
+      "牛腩切块，焯水",
+      "番茄切块，洋葱切丝",
+      "炒香洋葱和姜片",
+      "加入牛腩翻炒",
+      "加入番茄和番茄酱",
+      "加水炖煮50分钟至软烂",
+      "收汁调味出锅"
+    ],
+    "nutrition": {
+      "calories": 680,
+      "protein": 45,
+      "carbs": 32,
+      "fat": 40
+    },
+    "sources": [
+      {
+        "platform": "下厨房",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "Edamam",
+        "dataType": "营养分析",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "炖菜",
+      "高蛋白",
+      "开胃"
+    ]
+  },
+  {
+    "id": "l004",
+    "name": "鱼香肉丝",
+    "category": "lunch",
+    "image": "./food/optimized/鱼香肉丝.jpg",
+    "description": "川菜名菜，酸甜咸辣",
+    "cookTime": 20,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "猪里脊",
+        "amount": "200g"
+      },
+      {
+        "name": "木耳",
+        "amount": "50g"
+      },
+      {
+        "name": "胡萝卜",
+        "amount": "50g"
+      },
+      {
+        "name": "泡椒",
+        "amount": "30g"
+      },
+      {
+        "name": "葱姜蒜",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "猪肉切丝，腌制",
+      "木耳泡发切丝，胡萝卜切丝",
+      "调制鱼香汁",
+      "炒肉丝至变色，盛出",
+      "炒泡椒和葱姜蒜",
+      "加入配菜翻炒",
+      "倒入肉丝和鱼香汁，快速翻炒"
+    ],
+    "nutrition": {
+      "calories": 620,
+      "protein": 35,
+      "carbs": 38,
+      "fat": 35
+    },
+    "sources": [
+      {
+        "platform": "豆果美食",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "USDA FoodData Central",
+        "dataType": "营养数据",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "川菜",
+      "下饭菜",
+      "经典"
+    ]
+  },
+  {
+    "id": "l005",
+    "name": "糖醋里脊",
+    "category": "lunch",
+    "image": "./food/optimized/糖醋里脊.jpg",
+    "description": "酸甜可口，外酥里嫩",
+    "cookTime": 30,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "猪里脊",
+        "amount": "300g"
+      },
+      {
+        "name": "鸡蛋",
+        "amount": "1个"
+      },
+      {
+        "name": "淀粉",
+        "amount": "50g"
+      },
+      {
+        "name": "番茄酱",
+        "amount": "40g"
+      },
+      {
+        "name": "白醋",
+        "amount": "20ml"
+      },
+      {
+        "name": "白糖",
+        "amount": "30g"
+      }
+    ],
+    "steps": [
+      "里脊肉切条，腌制",
+      "裹上蛋液和淀粉",
+      "油炸至金黄酥脆",
+      "调制糖醋汁（番茄酱、醋、糖）",
+      "糖醋汁煮至浓稠",
+      "倒入炸好的里脊，快速翻拌"
+    ],
+    "nutrition": {
+      "calories": 700,
+      "protein": 38,
+      "carbs": 55,
+      "fat": 35
+    },
+    "sources": [
+      {
+        "platform": "下厨房",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "中国居民膳食指南",
+        "dataType": "营养标准",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "酸甜",
+      "油炸",
+      "家常菜"
+    ]
+  },
+  {
+    "id": "l006",
+    "name": "麻婆豆腐",
+    "category": "lunch",
+    "image": "./food/optimized/麻婆豆腐.jpg",
+    "description": "川菜经典，麻辣鲜香",
+    "cookTime": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "豆腐",
+        "amount": "400g"
+      },
+      {
+        "name": "猪肉末",
+        "amount": "100g"
+      },
+      {
+        "name": "豆瓣酱",
+        "amount": "20g"
+      },
+      {
+        "name": "花椒粉",
+        "amount": "5g"
+      },
+      {
+        "name": "葱姜蒜",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "豆腐切块，焯水",
+      "炒肉末至变色",
+      "加入豆瓣酱炒出红油",
+      "加水烧开",
+      "放入豆腐，小火煮5分钟",
+      "勾芡，撒花椒粉和葱花"
+    ],
+    "nutrition": {
+      "calories": 580,
+      "protein": 32,
+      "carbs": 28,
+      "fat": 38
+    },
+    "sources": [
+      {
+        "platform": "豆果美食",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "Edamam",
+        "dataType": "营养分析",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "川菜",
+      "豆制品",
+      "麻辣"
+    ]
+  },
+  {
+    "id": "l007",
+    "name": "青椒肉丝",
+    "category": "lunch",
+    "image": "https://images.pexels.com/photos/2313686/pexels-photo-2313686.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "description": "家常快手菜，清爽下饭",
+    "cookTime": 15,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "猪里脊",
+        "amount": "200g"
+      },
+      {
+        "name": "青椒",
+        "amount": "2个"
+      },
+      {
+        "name": "酱油",
+        "amount": "15ml"
+      },
+      {
+        "name": "料酒",
+        "amount": "10ml"
+      },
+      {
+        "name": "淀粉",
+        "amount": "10g"
+      }
+    ],
+    "steps": [
+      "猪肉切丝，用酱油、料酒、淀粉腌制",
+      "青椒切丝",
+      "热油炒肉丝至变色，盛出",
+      "炒青椒至断生",
+      "倒入肉丝，快速翻炒",
+      "调味出锅"
+    ],
+    "nutrition": {
+      "calories": 600,
+      "protein": 36,
+      "carbs": 25,
+      "fat": 38
+    },
+    "sources": [
+      {
+        "platform": "下厨房",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "USDA FoodData Central",
+        "dataType": "营养数据",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "快手菜",
+      "家常菜",
+      "下饭"
+    ]
+  },
+  {
+    "id": "l008",
+    "name": "红烧茄子",
+    "category": "lunch",
+    "image": "https://images.pexels.com/photos/2313686/pexels-photo-2313686.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "description": "素菜也能很下饭",
+    "cookTime": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "茄子",
+        "amount": "2个"
+      },
+      {
+        "name": "蒜末",
+        "amount": "20g"
+      },
+      {
+        "name": "酱油",
+        "amount": "20ml"
+      },
+      {
+        "name": "白糖",
+        "amount": "10g"
+      },
+      {
+        "name": "醋",
+        "amount": "5ml"
+      }
+    ],
+    "steps": [
+      "茄子切块，撒盐腌制10分钟",
+      "挤出水分",
+      "油炸茄子至软烂，盛出",
+      "爆香蒜末",
+      "加入酱油、糖、醋调成汁",
+      "倒入茄子，翻炒均匀"
+    ],
+    "nutrition": {
+      "calories": 550,
+      "protein": 8,
+      "carbs": 48,
+      "fat": 35
+    },
+    "sources": [
+      {
+        "platform": "豆果美食",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "中国居民膳食指南",
+        "dataType": "营养标准",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "素菜",
+      "下饭",
+      "红烧"
+    ]
+  },
+  {
+    "id": "l009",
+    "name": "回锅肉",
+    "category": "lunch",
+    "image": "https://images.pexels.com/photos/2255935/pexels-photo-2255935.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "description": "川菜之王，肥而不腻",
+    "cookTime": 30,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "五花肉",
+        "amount": "300g"
+      },
+      {
+        "name": "青蒜",
+        "amount": "100g"
+      },
+      {
+        "name": "豆瓣酱",
+        "amount": "20g"
+      },
+      {
+        "name": "豆豉",
+        "amount": "10g"
+      },
+      {
+        "name": "白糖",
+        "amount": "5g"
+      }
+    ],
+    "steps": [
+      "五花肉煮至八成熟，切片",
+      "青蒜切段",
+      "炒五花肉至出油卷曲",
+      "加入豆瓣酱和豆豉炒香",
+      "加入青蒜翻炒",
+      "加糖调味出锅"
+    ],
+    "nutrition": {
+      "calories": 750,
+      "protein": 28,
+      "carbs": 22,
+      "fat": 60
+    },
+    "sources": [
+      {
+        "platform": "下厨房",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "Edamam",
+        "dataType": "营养分析",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "川菜",
+      "硬菜",
+      "经典"
+    ]
+  },
+  {
+    "id": "l010",
+    "name": "西红柿炖牛肉",
+    "category": "lunch",
+    "image": "https://images.pexels.com/photos/6210747/pexels-photo-6210747.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "description": "营养丰富，汤汁浓郁",
+    "cookTime": 70,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "牛肉",
+        "amount": "400g"
+      },
+      {
+        "name": "番茄",
+        "amount": "4个"
+      },
+      {
+        "name": "土豆",
+        "amount": "2个"
+      },
+      {
+        "name": "洋葱",
+        "amount": "1个"
+      },
+      {
+        "name": "姜片",
+        "amount": "3片"
+      }
+    ],
+    "steps": [
+      "牛肉切块，焯水",
+      "番茄切块，土豆切块",
+      "炒香洋葱和姜片",
+      "加入牛肉翻炒",
+      "加入番茄炒出汁",
+      "加水炖煮60分钟",
+      "加入土豆，继续炖10分钟"
+    ],
+    "nutrition": {
+      "calories": 690,
+      "protein": 48,
+      "carbs": 42,
+      "fat": 35
+    },
+    "sources": [
+      {
+        "platform": "豆果美食",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "USDA FoodData Central",
+        "dataType": "营养数据",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "炖菜",
+      "高蛋白",
+      "营养丰富"
+    ]
+  }
+]

@@ -1,0 +1,613 @@
+[
+  {
+    "id": "d001",
+    "name": "清蒸鲈鱼",
+    "category": "dinner",
+    "image": "./food/optimized/清蒸鲈鱼.jpg",
+    "description": "清淡鲜美，易消化",
+    "cookTime": 25,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "鲈鱼",
+        "amount": "1条(约500g)"
+      },
+      {
+        "name": "姜丝",
+        "amount": "适量"
+      },
+      {
+        "name": "葱丝",
+        "amount": "适量"
+      },
+      {
+        "name": "蒸鱼豉油",
+        "amount": "30ml"
+      },
+      {
+        "name": "食用油",
+        "amount": "20ml"
+      }
+    ],
+    "steps": [
+      "鲈鱼处理干净，两面划刀",
+      "鱼身抹盐，腌制10分钟",
+      "放上姜丝，蒸8分钟",
+      "倒掉蒸出的水",
+      "放上葱丝，淋蒸鱼豉油",
+      "浇热油激发香味"
+    ],
+    "nutrition": {
+      "calories": 420,
+      "protein": 52,
+      "carbs": 8,
+      "fat": 18
+    },
+    "sources": [
+      {
+        "platform": "下厨房",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "USDA FoodData Central",
+        "dataType": "营养数据",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "清蒸",
+      "高蛋白",
+      "低脂"
+    ]
+  },
+  {
+    "id": "d002",
+    "name": "蒜蓉西兰花",
+    "category": "dinner",
+    "image": "./food/optimized/蒜蓉西兰花.jpg",
+    "description": "清爽健康，富含维生素",
+    "cookTime": 10,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "西兰花",
+        "amount": "300g"
+      },
+      {
+        "name": "大蒜",
+        "amount": "5瓣"
+      },
+      {
+        "name": "盐",
+        "amount": "适量"
+      },
+      {
+        "name": "食用油",
+        "amount": "15ml"
+      }
+    ],
+    "steps": [
+      "西兰花切小朵，焯水",
+      "大蒜切末",
+      "热油爆香蒜末",
+      "加入西兰花翻炒",
+      "加盐调味即可"
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein": 8,
+      "carbs": 18,
+      "fat": 8
+    },
+    "sources": [
+      {
+        "platform": "豆果美食",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "Edamam",
+        "dataType": "营养分析",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "素菜",
+      "快手菜",
+      "低卡"
+    ]
+  },
+  {
+    "id": "d003",
+    "name": "冬瓜排骨汤",
+    "category": "dinner",
+    "image": "./food/optimized/冬瓜排骨汤.jpg",
+    "description": "清淡养生，消暑利水",
+    "cookTime": 50,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "排骨",
+        "amount": "300g"
+      },
+      {
+        "name": "冬瓜",
+        "amount": "400g"
+      },
+      {
+        "name": "姜片",
+        "amount": "3片"
+      },
+      {
+        "name": "盐",
+        "amount": "适量"
+      },
+      {
+        "name": "葱花",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "排骨焯水去血沫",
+      "冬瓜去皮切块",
+      "排骨加水和姜片，大火烧开",
+      "转小火炖40分钟",
+      "加入冬瓜，继续炖10分钟",
+      "加盐调味，撒葱花"
+    ],
+    "nutrition": {
+      "calories": 480,
+      "protein": 32,
+      "carbs": 22,
+      "fat": 28
+    },
+    "sources": [
+      {
+        "platform": "下厨房",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "中国居民膳食指南",
+        "dataType": "营养标准",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "汤品",
+      "养生",
+      "清淡"
+    ]
+  },
+  {
+    "id": "d004",
+    "name": "香菇炒青菜",
+    "category": "dinner",
+    "image": "https://images.pexels.com/photos/2255935/pexels-photo-2255935.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "description": "素食清爽，营养均衡",
+    "cookTime": 12,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "香菇",
+        "amount": "150g"
+      },
+      {
+        "name": "青菜",
+        "amount": "300g"
+      },
+      {
+        "name": "大蒜",
+        "amount": "3瓣"
+      },
+      {
+        "name": "蚝油",
+        "amount": "10ml"
+      },
+      {
+        "name": "盐",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "香菇切片，青菜洗净",
+      "蒜切末",
+      "热油爆香蒜末",
+      "加入香菇炒软",
+      "加入青菜翻炒",
+      "加蚝油和盐调味"
+    ],
+    "nutrition": {
+      "calories": 220,
+      "protein": 10,
+      "carbs": 25,
+      "fat": 9
+    },
+    "sources": [
+      {
+        "platform": "豆果美食",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "Edamam",
+        "dataType": "营养分析",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "素菜",
+      "快手菜",
+      "健康"
+    ]
+  },
+  {
+    "id": "d005",
+    "name": "虾仁豆腐羹",
+    "category": "dinner",
+    "image": "https://images.pexels.com/photos/3763816/pexels-photo-3763816.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "description": "鲜嫩滑口，营养丰富",
+    "cookTime": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "虾仁",
+        "amount": "150g"
+      },
+      {
+        "name": "嫩豆腐",
+        "amount": "200g"
+      },
+      {
+        "name": "鸡蛋",
+        "amount": "1个"
+      },
+      {
+        "name": "淀粉",
+        "amount": "20g"
+      },
+      {
+        "name": "盐",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "虾仁处理干净，豆腐切小块",
+      "水烧开，加入豆腐",
+      "加入虾仁煮熟",
+      "淀粉勾芡",
+      "倒入蛋液，搅拌成蛋花",
+      "加盐调味即可"
+    ],
+    "nutrition": {
+      "calories": 380,
+      "protein": 38,
+      "carbs": 18,
+      "fat": 16
+    },
+    "sources": [
+      {
+        "platform": "下厨房",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "USDA FoodData Central",
+        "dataType": "营养数据",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "汤羹",
+      "高蛋白",
+      "易消化"
+    ]
+  },
+  {
+    "id": "d006",
+    "name": "凉拌黄瓜",
+    "category": "dinner",
+    "image": "./food/optimized/凉拌黄瓜.jpg",
+    "description": "清爽开胃，低卡健康",
+    "cookTime": 10,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "黄瓜",
+        "amount": "2根"
+      },
+      {
+        "name": "大蒜",
+        "amount": "3瓣"
+      },
+      {
+        "name": "香醋",
+        "amount": "15ml"
+      },
+      {
+        "name": "香油",
+        "amount": "5ml"
+      },
+      {
+        "name": "盐",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "黄瓜拍碎切段",
+      "大蒜切末",
+      "黄瓜加盐腌制5分钟",
+      "倒掉多余水分",
+      "加入蒜末、醋、香油",
+      "拌匀即可"
+    ],
+    "nutrition": {
+      "calories": 120,
+      "protein": 3,
+      "carbs": 15,
+      "fat": 5
+    },
+    "sources": [
+      {
+        "platform": "豆果美食",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "中国居民膳食指南",
+        "dataType": "营养标准",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "凉菜",
+      "低卡",
+      "开胃"
+    ]
+  },
+  {
+    "id": "d007",
+    "name": "蒸蛋羹",
+    "category": "dinner",
+    "image": "./food/optimized/蒸蛋羹.jpg",
+    "description": "细腻嫩滑，易消化",
+    "cookTime": 15,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "鸡蛋",
+        "amount": "2个"
+      },
+      {
+        "name": "温水",
+        "amount": "150ml"
+      },
+      {
+        "name": "盐",
+        "amount": "2g"
+      },
+      {
+        "name": "香油",
+        "amount": "5ml"
+      },
+      {
+        "name": "酱油",
+        "amount": "5ml"
+      }
+    ],
+    "steps": [
+      "鸡蛋打散",
+      "加入温水和盐，搅拌均匀",
+      "过滤气泡",
+      "盖上保鲜膜，扎几个小孔",
+      "蒸10分钟",
+      "淋上酱油和香油"
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein": 14,
+      "carbs": 3,
+      "fat": 12
+    },
+    "sources": [
+      {
+        "platform": "下厨房",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "Edamam",
+        "dataType": "营养分析",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "蒸菜",
+      "高蛋白",
+      "易消化"
+    ]
+  },
+  {
+    "id": "d008",
+    "name": "紫菜蛋花汤",
+    "category": "dinner",
+    "image": "./food/optimized/紫菜蛋花汤.jpg",
+    "description": "清淡鲜美，补碘佳品",
+    "cookTime": 10,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "紫菜",
+        "amount": "10g"
+      },
+      {
+        "name": "鸡蛋",
+        "amount": "1个"
+      },
+      {
+        "name": "虾皮",
+        "amount": "10g"
+      },
+      {
+        "name": "盐",
+        "amount": "适量"
+      },
+      {
+        "name": "香油",
+        "amount": "5ml"
+      }
+    ],
+    "steps": [
+      "紫菜撕碎，虾皮洗净",
+      "水烧开，加入虾皮",
+      "加入紫菜",
+      "倒入打散的蛋液",
+      "加盐调味",
+      "淋香油出锅"
+    ],
+    "nutrition": {
+      "calories": 150,
+      "protein": 12,
+      "carbs": 8,
+      "fat": 8
+    },
+    "sources": [
+      {
+        "platform": "豆果美食",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "USDA FoodData Central",
+        "dataType": "营养数据",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "汤品",
+      "快手菜",
+      "补碘"
+    ]
+  },
+  {
+    "id": "d009",
+    "name": "清炒芦笋",
+    "category": "dinner",
+    "image": "https://images.pexels.com/photos/2255935/pexels-photo-2255935.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "description": "清脆爽口，营养价值高",
+    "cookTime": 10,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "芦笋",
+        "amount": "300g"
+      },
+      {
+        "name": "大蒜",
+        "amount": "3瓣"
+      },
+      {
+        "name": "盐",
+        "amount": "适量"
+      },
+      {
+        "name": "食用油",
+        "amount": "15ml"
+      }
+    ],
+    "steps": [
+      "芦笋去老根，切段",
+      "焯水30秒",
+      "蒜切末",
+      "热油爆香蒜末",
+      "加入芦笋快速翻炒",
+      "加盐调味出锅"
+    ],
+    "nutrition": {
+      "calories": 160,
+      "protein": 6,
+      "carbs": 16,
+      "fat": 8
+    },
+    "sources": [
+      {
+        "platform": "下厨房",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "中国居民膳食指南",
+        "dataType": "营养标准",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "素菜",
+      "快手菜",
+      "低卡"
+    ]
+  },
+  {
+    "id": "d010",
+    "name": "番茄蛋汤",
+    "category": "dinner",
+    "image": "./food/optimized/番茄蛋汤.jpg",
+    "description": "酸甜开胃，家常必备",
+    "cookTime": 12,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "番茄",
+        "amount": "2个"
+      },
+      {
+        "name": "鸡蛋",
+        "amount": "2个"
+      },
+      {
+        "name": "葱花",
+        "amount": "适量"
+      },
+      {
+        "name": "盐",
+        "amount": "适量"
+      },
+      {
+        "name": "食用油",
+        "amount": "10ml"
+      }
+    ],
+    "steps": [
+      "番茄切块",
+      "鸡蛋打散",
+      "热油炒番茄至软烂",
+      "加水烧开",
+      "倒入蛋液，搅拌成蛋花",
+      "加盐调味，撒葱花"
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein": 14,
+      "carbs": 12,
+      "fat": 11
+    },
+    "sources": [
+      {
+        "platform": "豆果美食",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "Edamam",
+        "dataType": "营养分析",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "汤品",
+      "家常菜",
+      "开胃"
+    ]
+  }
+]

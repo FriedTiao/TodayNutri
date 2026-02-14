@@ -1,0 +1,111 @@
+/* 移动端适配 */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  /* 头部 */
+  .header h1 {
+    font-size: 22px;
+  }
+
+  .header .date {
+    font-size: 14px;
+  }
+
+  /* 营养总览 */
+  .nutrition-overview {
+    padding: 20px;
+  }
+
+  .calories-number {
+    font-size: 36px;
+  }
+
+  .calories-label {
+    font-size: 16px;
+  }
+
+  /* 三餐网格改为单列 */
+  .meals-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .meal-card {
+    margin-bottom: 0;
+  }
+
+  .meal-image-container {
+    height: 180px;
+  }
+
+  /* 数据来源 */
+  .data-sources {
+    padding: 20px;
+  }
+
+  .data-sources h3 {
+    font-size: 18px;
+  }
+
+  .data-sources li {
+    font-size: 14px;
+  }
+}
+
+/* 平板适配 */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .meals-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .meal-card:last-child {
+    grid-column: 1 / -1;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}
+
+/* 触摸优化 */
+@media (hover: none) and (pointer: coarse) {
+  .btn {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+
+  .meal-actions .btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* 增大可点击区域 */
+  .meal-card {
+    cursor: pointer;
+  }
+}
+
+/* 详情页移动端适配 */
+@media (max-width: 768px) {
+  .detail-container {
+    padding: 10px;
+  }
+
+  .recipe-image {
+    height: 250px;
+  }
+
+  .recipe-header h1 {
+    font-size: 24px;
+  }
+
+  .nutrition-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ingredients-list,
+  .steps-list {
+    padding-left: 20px;
+  }
+}

@@ -1,0 +1,580 @@
+[
+  {
+    "id": "b001",
+    "name": "番茄炒蛋",
+    "category": "breakfast",
+    "image": "./food/optimized/番茄炒蛋.jpg",
+    "description": "经典家常菜，酸甜开胃，富含优质蛋白",
+    "cookTime": 15,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "鸡蛋",
+        "amount": "2个"
+      },
+      {
+        "name": "番茄",
+        "amount": "2个"
+      },
+      {
+        "name": "食用油",
+        "amount": "15ml"
+      },
+      {
+        "name": "盐",
+        "amount": "3g"
+      }
+    ],
+    "steps": [
+      "鸡蛋打散，加少许盐",
+      "番茄切块",
+      "热油炒蛋，盛出",
+      "炒番茄至软烂，加入鸡蛋翻炒",
+      "调味出锅"
+    ],
+    "nutrition": {
+      "calories": 280,
+      "protein": 14,
+      "carbs": 12,
+      "fat": 18
+    },
+    "sources": [
+      {
+        "platform": "下厨房",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "USDA FoodData Central",
+        "dataType": "营养数据",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "快手菜",
+      "高蛋白",
+      "家常菜"
+    ]
+  },
+  {
+    "id": "b002",
+    "name": "皮蛋瘦肉粥",
+    "category": "breakfast",
+    "image": "./food/optimized/皮蛋瘦肉粥.jpg",
+    "description": "温润养胃，营养丰富，适合早餐",
+    "cookTime": 40,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "大米",
+        "amount": "100g"
+      },
+      {
+        "name": "瘦肉",
+        "amount": "80g"
+      },
+      {
+        "name": "皮蛋",
+        "amount": "1个"
+      },
+      {
+        "name": "姜丝",
+        "amount": "适量"
+      },
+      {
+        "name": "盐",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "大米洗净浸泡30分钟",
+      "瘦肉切丝，用盐和姜丝腌制",
+      "皮蛋切块",
+      "大米加水煮粥，煮至粘稠",
+      "加入肉丝和皮蛋，继续煮10分钟",
+      "调味出锅"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 18,
+      "carbs": 52,
+      "fat": 8
+    },
+    "sources": [
+      {
+        "platform": "豆果美食",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "中国居民膳食指南",
+        "dataType": "营养标准",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "养胃",
+      "粥类",
+      "传统早餐"
+    ]
+  },
+  {
+    "id": "b003",
+    "name": "全麦三明治",
+    "category": "breakfast",
+    "image": "./food/optimized/全麦三明治.jpg",
+    "description": "快手营养早餐，富含膳食纤维",
+    "cookTime": 10,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "全麦面包",
+        "amount": "2片"
+      },
+      {
+        "name": "鸡蛋",
+        "amount": "1个"
+      },
+      {
+        "name": "生菜",
+        "amount": "2片"
+      },
+      {
+        "name": "番茄",
+        "amount": "2片"
+      },
+      {
+        "name": "火腿",
+        "amount": "1片"
+      }
+    ],
+    "steps": [
+      "鸡蛋煎熟",
+      "全麦面包烤至微黄",
+      "依次放上生菜、番茄、火腿、煎蛋",
+      "盖上另一片面包",
+      "对角切开即可"
+    ],
+    "nutrition": {
+      "calories": 320,
+      "protein": 16,
+      "carbs": 38,
+      "fat": 12
+    },
+    "sources": [
+      {
+        "platform": "下厨房",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "Edamam",
+        "dataType": "营养分析",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "快手菜",
+      "西式早餐",
+      "高纤维"
+    ]
+  },
+  {
+    "id": "b004",
+    "name": "小米南瓜粥",
+    "category": "breakfast",
+    "image": "./food/optimized/小米南瓜粥.jpg",
+    "description": "暖胃养生，香甜可口",
+    "cookTime": 35,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "小米",
+        "amount": "80g"
+      },
+      {
+        "name": "南瓜",
+        "amount": "150g"
+      },
+      {
+        "name": "冰糖",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "小米洗净浸泡20分钟",
+      "南瓜去皮切块",
+      "小米加水煮开",
+      "加入南瓜块，转小火煮25分钟",
+      "加冰糖调味即可"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 8,
+      "carbs": 62,
+      "fat": 3
+    },
+    "sources": [
+      {
+        "platform": "豆果美食",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "中国居民膳食指南",
+        "dataType": "营养标准",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "养生粥",
+      "素食",
+      "暖胃"
+    ]
+  },
+  {
+    "id": "b005",
+    "name": "鸡蛋灌饼",
+    "category": "breakfast",
+    "image": "./food/optimized/鸡蛋灌饼.jpg",
+    "description": "街头经典早餐，外酥里嫩",
+    "cookTime": 20,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "面粉",
+        "amount": "200g"
+      },
+      {
+        "name": "鸡蛋",
+        "amount": "2个"
+      },
+      {
+        "name": "葱花",
+        "amount": "适量"
+      },
+      {
+        "name": "盐",
+        "amount": "适量"
+      },
+      {
+        "name": "食用油",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "面粉加水和成面团，醒面15分钟",
+      "擀成薄饼",
+      "平底锅烙至起泡",
+      "用筷子戳破，灌入打散的鸡蛋液",
+      "翻面烙至两面金黄"
+    ],
+    "nutrition": {
+      "calories": 380,
+      "protein": 15,
+      "carbs": 48,
+      "fat": 14
+    },
+    "sources": [
+      {
+        "platform": "下厨房",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "USDA FoodData Central",
+        "dataType": "营养数据",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "传统早餐",
+      "面食",
+      "街头美食"
+    ]
+  },
+  {
+    "id": "b006",
+    "name": "牛奶燕麦粥",
+    "category": "breakfast",
+    "image": "./food/optimized/牛奶燕麦粥.jpg",
+    "description": "营养丰富，饱腹感强",
+    "cookTime": 10,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "燕麦片",
+        "amount": "50g"
+      },
+      {
+        "name": "牛奶",
+        "amount": "250ml"
+      },
+      {
+        "name": "香蕉",
+        "amount": "半根"
+      },
+      {
+        "name": "蜂蜜",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "燕麦片加牛奶煮5分钟",
+      "香蕉切片",
+      "燕麦粥盛出，放上香蕉片",
+      "淋上蜂蜜即可"
+    ],
+    "nutrition": {
+      "calories": 340,
+      "protein": 12,
+      "carbs": 54,
+      "fat": 9
+    },
+    "sources": [
+      {
+        "platform": "豆果美食",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "Edamam",
+        "dataType": "营养分析",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "快手菜",
+      "高纤维",
+      "西式早餐"
+    ]
+  },
+  {
+    "id": "b007",
+    "name": "韭菜盒子",
+    "category": "breakfast",
+    "image": "./food/optimized/韭菜盒子.jpg",
+    "description": "传统面点，鲜香可口",
+    "cookTime": 30,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "面粉",
+        "amount": "200g"
+      },
+      {
+        "name": "韭菜",
+        "amount": "150g"
+      },
+      {
+        "name": "鸡蛋",
+        "amount": "2个"
+      },
+      {
+        "name": "虾皮",
+        "amount": "20g"
+      },
+      {
+        "name": "盐",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "面粉和成面团，醒面",
+      "韭菜洗净切碎，鸡蛋炒碎",
+      "韭菜、鸡蛋、虾皮混合，加盐调味",
+      "面团擀皮，包入馅料",
+      "平底锅烙至两面金黄"
+    ],
+    "nutrition": {
+      "calories": 420,
+      "protein": 18,
+      "carbs": 52,
+      "fat": 16
+    },
+    "sources": [
+      {
+        "platform": "下厨房",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "中国居民膳食指南",
+        "dataType": "营养标准",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "传统面点",
+      "家常菜",
+      "营养丰富"
+    ]
+  },
+  {
+    "id": "b008",
+    "name": "豆浆油条",
+    "category": "breakfast",
+    "image": "./food/optimized/豆浆油条.jpg",
+    "description": "经典中式早餐组合",
+    "cookTime": 15,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "黄豆",
+        "amount": "80g"
+      },
+      {
+        "name": "油条",
+        "amount": "1根"
+      },
+      {
+        "name": "白糖",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "黄豆提前浸泡8小时",
+      "豆浆机打成豆浆",
+      "过滤豆渣，煮沸",
+      "加糖调味",
+      "搭配油条食用"
+    ],
+    "nutrition": {
+      "calories": 360,
+      "protein": 16,
+      "carbs": 42,
+      "fat": 14
+    },
+    "sources": [
+      {
+        "platform": "豆果美食",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "USDA FoodData Central",
+        "dataType": "营养数据",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "传统早餐",
+      "豆制品",
+      "经典组合"
+    ]
+  },
+  {
+    "id": "b009",
+    "name": "蔬菜鸡蛋饼",
+    "category": "breakfast",
+    "image": "./food/optimized/蔬菜鸡蛋饼.jpg",
+    "description": "营养全面，色彩丰富",
+    "cookTime": 15,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "鸡蛋",
+        "amount": "2个"
+      },
+      {
+        "name": "胡萝卜",
+        "amount": "50g"
+      },
+      {
+        "name": "西葫芦",
+        "amount": "50g"
+      },
+      {
+        "name": "面粉",
+        "amount": "50g"
+      },
+      {
+        "name": "盐",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "蔬菜切丝",
+      "鸡蛋打散，加入面粉和蔬菜丝",
+      "加盐调味，搅拌均匀",
+      "平底锅刷油，倒入蛋糊",
+      "小火煎至两面金黄"
+    ],
+    "nutrition": {
+      "calories": 310,
+      "protein": 14,
+      "carbs": 32,
+      "fat": 13
+    },
+    "sources": [
+      {
+        "platform": "下厨房",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "Edamam",
+        "dataType": "营养分析",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "快手菜",
+      "蔬菜",
+      "营养均衡"
+    ]
+  },
+  {
+    "id": "b010",
+    "name": "红豆薏米粥",
+    "category": "breakfast",
+    "image": "./food/optimized/红豆薏米粥.jpg",
+    "description": "祛湿养生，清淡健康",
+    "cookTime": 50,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "红豆",
+        "amount": "50g"
+      },
+      {
+        "name": "薏米",
+        "amount": "50g"
+      },
+      {
+        "name": "冰糖",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "红豆和薏米提前浸泡4小时",
+      "加水煮开，转小火",
+      "煮40分钟至软烂",
+      "加冰糖调味",
+      "继续煮5分钟即可"
+    ],
+    "nutrition": {
+      "calories": 290,
+      "protein": 10,
+      "carbs": 58,
+      "fat": 2
+    },
+    "sources": [
+      {
+        "platform": "豆果美食",
+        "dataType": "菜谱参考",
+        "verified": true
+      },
+      {
+        "platform": "中国居民膳食指南",
+        "dataType": "营养标准",
+        "verified": true
+      }
+    ],
+    "tags": [
+      "养生粥",
+      "祛湿",
+      "素食"
+    ]
+  }
+]

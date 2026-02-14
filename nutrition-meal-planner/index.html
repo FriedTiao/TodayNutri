@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="每日营养餐推荐 - 让每一餐都营养均衡">
+  <title>今日营养仪表盘 - 营养餐推荐</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/dashboard.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+</head>
+<body>
+  <!-- 加载状态 -->
+  <div id="loading">
+    <div class="spinner"></div>
+  </div>
+
+  <div class="container">
+    <!-- 头部 -->
+    <header class="header">
+      <h1>🍽️ 今日营养仪表盘</h1>
+      <p class="date" id="current-date">2026-02-14</p>
+    </header>
+
+    <!-- 营养总览 -->
+    <section class="nutrition-overview card">
+      <h2>📊 今日营养摄入</h2>
+
+      <div class="calories-display">
+        <span class="calories-number" id="total-calories">0</span>
+        <span class="calories-label">kcal</span>
+      </div>
+      <p class="calories-target">目标：1400-2000 kcal</p>
+
+      <div class="nutrition-bars">
+        <div class="nutrition-item">
+          <div class="nutrition-label">
+            <span id="protein-value">0g</span>
+            <span id="protein-percent">0%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="protein-bar" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <div class="nutrition-item">
+          <div class="nutrition-label">
+            <span id="carbs-value">0g</span>
+            <span id="carbs-percent">0%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="carbs-bar" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <div class="nutrition-item">
+          <div class="nutrition-label">
+            <span id="fat-value">0g</span>
+            <span id="fat-percent">0%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="fat-bar" style="width: 0%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 三餐推荐 -->
+    <section class="meals-grid">
+      <!-- 早餐 -->
+      <div class="meal-card" id="breakfast-card">
+        <div class="meal-header">
+          <div class="meal-type">🌅 早餐</div>
+          <div class="meal-calories-header"><span class="meal-calories">0</span> kcal</div>
+        </div>
+        <div class="meal-image-container">
+          <img class="meal-image" src="" alt="早餐">
+        </div>
+        <div class="meal-info">
+          <h3 class="meal-name">加载中...</h3>
+          <div class="meal-meta">
+            <span>⏱️ <span class="meal-time">0</span>分钟</span>
+            <span class="meal-difficulty">简单</span>
+          </div>
+          <div class="meal-actions">
+            <button class="btn btn-primary btn-detail">查看详情</button>
+            <button class="btn btn-secondary btn-replace">换一个</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 午餐 -->
+      <div class="meal-card" id="lunch-card">
+        <div class="meal-header">
+          <div class="meal-type">☀️ 午餐</div>
+          <div class="meal-calories-header"><span class="meal-calories">0</span> kcal</div>
+        </div>
+        <div class="meal-image-container">
+          <img class="meal-image" src="" alt="午餐">
+        </div>
+        <div class="meal-info">
+          <h3 class="meal-name">加载中...</h3>
+          <div class="meal-meta">
+            <span>⏱️ <span class="meal-time">0</span>分钟</span>
+            <span class="meal-difficulty">简单</span>
+          </div>
+          <div class="meal-actions">
+            <button class="btn btn-primary btn-detail">查看详情</button>
+            <button class="btn btn-secondary btn-replace">换一个</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 晚餐 -->
+      <div class="meal-card" id="dinner-card">
+        <div class="meal-header">
+          <div class="meal-type">🌙 晚餐</div>
+          <div class="meal-calories-header"><span class="meal-calories">0</span> kcal</div>
+        </div>
+        <div class="meal-image-container">
+          <img class="meal-image" src="" alt="晚餐">
+        </div>
+        <div class="meal-info">
+          <h3 class="meal-name">加载中...</h3>
+          <div class="meal-meta">
+            <span>⏱️ <span class="meal-time">0</span>分钟</span>
+            <span class="meal-difficulty">简单</span>
+          </div>
+          <div class="meal-actions">
+            <button class="btn btn-primary btn-detail">查看详情</button>
+            <button class="btn btn-secondary btn-replace">换一个</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 数据来源说明 -->
+    <section class="data-sources card">
+      <h3>📚 数据来源</h3>
+      <p>本站菜谱综合对比以下平台：</p>
+      <ul>
+        <li>USDA FoodData Central (营养数据)</li>
+        <li>Edamam 营养分析平台</li>
+        <li>下厨房、豆果美食 (菜谱参考)</li>
+        <li>中国居民膳食指南</li>
+      </ul>
+
+      <div class="disclaimer">
+        <p>⚠️ 营养建议仅供参考，个体需求因人而异</p>
+        <p><a href="about.html">查看详细说明</a></p>
+      </div>
+    </section>
+  </div>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

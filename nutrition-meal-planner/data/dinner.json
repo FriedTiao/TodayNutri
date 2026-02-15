@@ -47,12 +47,14 @@
       {
         "platform": "下厨房",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.xiachufang.com/search/?keyword=清蒸鲈鱼"
       },
       {
         "platform": "USDA FoodData Central",
         "dataType": "营养数据",
-        "verified": true
+        "verified": true,
+        "url": "https://fdc.nal.usda.gov/"
       }
     ],
     "tags": [
@@ -104,12 +106,14 @@
       {
         "platform": "豆果美食",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.douguo.com/search/recipe/蒜蓉西兰花"
       },
       {
         "platform": "Edamam",
         "dataType": "营养分析",
-        "verified": true
+        "verified": true,
+        "url": "https://www.edamam.com/"
       }
     ],
     "tags": [
@@ -166,12 +170,14 @@
       {
         "platform": "下厨房",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.xiachufang.com/search/?keyword=冬瓜排骨汤"
       },
       {
         "platform": "中国居民膳食指南",
         "dataType": "营养标准",
-        "verified": true
+        "verified": true,
+        "url": "http://dg.cnsoc.org/"
       }
     ],
     "tags": [
@@ -228,12 +234,14 @@
       {
         "platform": "豆果美食",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.douguo.com/search/recipe/香菇炒青菜"
       },
       {
         "platform": "Edamam",
         "dataType": "营养分析",
-        "verified": true
+        "verified": true,
+        "url": "https://www.edamam.com/"
       }
     ],
     "tags": [
@@ -290,12 +298,14 @@
       {
         "platform": "下厨房",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.xiachufang.com/search/?keyword=虾仁豆腐羹"
       },
       {
         "platform": "USDA FoodData Central",
         "dataType": "营养数据",
-        "verified": true
+        "verified": true,
+        "url": "https://fdc.nal.usda.gov/"
       }
     ],
     "tags": [
@@ -352,12 +362,14 @@
       {
         "platform": "豆果美食",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.douguo.com/search/recipe/凉拌黄瓜"
       },
       {
         "platform": "中国居民膳食指南",
         "dataType": "营养标准",
-        "verified": true
+        "verified": true,
+        "url": "http://dg.cnsoc.org/"
       }
     ],
     "tags": [
@@ -414,12 +426,14 @@
       {
         "platform": "下厨房",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.xiachufang.com/search/?keyword=蒸蛋羹"
       },
       {
         "platform": "Edamam",
         "dataType": "营养分析",
-        "verified": true
+        "verified": true,
+        "url": "https://www.edamam.com/"
       }
     ],
     "tags": [
@@ -476,12 +490,14 @@
       {
         "platform": "豆果美食",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.douguo.com/search/recipe/紫菜蛋花汤"
       },
       {
         "platform": "USDA FoodData Central",
         "dataType": "营养数据",
-        "verified": true
+        "verified": true,
+        "url": "https://fdc.nal.usda.gov/"
       }
     ],
     "tags": [
@@ -534,12 +550,14 @@
       {
         "platform": "下厨房",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.xiachufang.com/search/?keyword=清炒芦笋"
       },
       {
         "platform": "中国居民膳食指南",
         "dataType": "营养标准",
-        "verified": true
+        "verified": true,
+        "url": "http://dg.cnsoc.org/"
       }
     ],
     "tags": [
@@ -596,12 +614,14 @@
       {
         "platform": "豆果美食",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.douguo.com/search/recipe/番茄蛋汤"
       },
       {
         "platform": "Edamam",
         "dataType": "营养分析",
-        "verified": true
+        "verified": true,
+        "url": "https://www.edamam.com/"
       }
     ],
     "tags": [

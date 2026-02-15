@@ -2,9 +2,12 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta name="theme-color" content="#FF6B6B">
+  <meta name="mobile-web-app-capable" content="yes">
   <title>菜谱详情 - 营养餐推荐</title>
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/dashboard.css">
   <link rel="stylesheet" href="./css/mobile.css">
   <style>
     .detail-container {
@@ -14,75 +17,130 @@
     }
 
     .back-button {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .back-button:hover {
+      transform: translateX(-5px);
     }
 
     .recipe-header {
       background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: var(--shadow);
-      margin-bottom: 20px;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      margin-bottom: 25px;
+      border: 1px solid rgba(240, 230, 216, 0.5);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .recipe-header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, #FF6B6B, #4ECDC4, #FFE66D);
     }
 
     .recipe-header h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
+      font-size: 36px;
+      margin-bottom: 15px;
+      color: var(--text-dark);
+      font-weight: 700;
+      line-height: 1.3;
     }
 
     .recipe-meta {
       display: flex;
-      gap: 20px;
+      gap: 25px;
       color: var(--text-light);
-      margin-top: 15px;
+      margin-top: 18px;
+      font-size: 15px;
+    }
+
+    .recipe-meta span {
+      display: flex;
+      align-items: center;
+      gap: 5px;
     }
 
     .recipe-image {
       width: 100%;
-      height: 400px;
+      height: 450px;
       object-fit: cover;
-      border-radius: 12px;
-      margin-bottom: 20px;
+      border-radius: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+      transition: transform 0.3s ease;
+    }
+
+    .recipe-image:hover {
+      transform: scale(1.02);
     }
 
     .section {
       background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: var(--shadow);
-      margin-bottom: 20px;
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      margin-bottom: 25px;
+      border: 1px solid rgba(240, 230, 216, 0.5);
+      transition: all 0.3s ease;
+    }
+
+    .section:hover {
+      box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+      transform: translateY(-3px);
     }
 
     .section h2 {
-      font-size: 24px;
-      margin-bottom: 20px;
+      font-size: 26px;
+      margin-bottom: 25px;
       color: var(--text-dark);
+      font-weight: 600;
+      padding-bottom: 15px;
+      border-bottom: 3px solid #FFE66D;
+      display: inline-block;
     }
 
     .nutrition-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 15px;
-      margin-top: 15px;
+      gap: 18px;
+      margin-top: 20px;
     }
 
     .nutrition-box {
       text-align: center;
-      padding: 15px;
-      background: var(--bg-light);
-      border-radius: 8px;
+      padding: 20px;
+      background: linear-gradient(135deg, #FFF8F0 0%, #FFE8D6 100%);
+      border-radius: 15px;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+
+    .nutrition-box:hover {
+      transform: translateY(-5px);
+      border-color: #FFE66D;
+      box-shadow: 0 8px 20px rgba(255, 230, 109, 0.3);
     }
 
     .nutrition-box .value {
-      font-size: 24px;
+      font-size: 28px;
       font-weight: bold;
       color: var(--primary-color);
+      margin-bottom: 5px;
     }
 
     .nutrition-box .label {
       font-size: 14px;
       color: var(--text-light);
-      margin-top: 5px;
+      margin-top: 8px;
+      font-weight: 500;
     }
 
     .ingredients-list,
@@ -93,47 +151,190 @@
     }
 
     .ingredients-list li {
-      padding: 10px;
-      border-bottom: 1px solid var(--border-color);
+      padding: 14px;
+      border-bottom: 1px solid rgba(240, 230, 216, 0.6);
+      transition: background 0.2s ease;
+      border-radius: 8px;
+      margin-bottom: 5px;
+    }
+
+    .ingredients-list li:hover {
+      background: rgba(255, 248, 240, 0.5);
+      padding-left: 20px;
     }
 
     .steps-list li {
-      padding: 15px;
-      margin-bottom: 10px;
-      background: var(--bg-light);
-      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 15px;
+      background: linear-gradient(135deg, #FFF8F0 0%, #FFE8D6 100%);
+      border-radius: 15px;
       position: relative;
-      padding-left: 50px;
+      padding-left: 65px;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+      line-height: 1.7;
+    }
+
+    .steps-list li:hover {
+      transform: translateX(10px);
+      border-color: #4ECDC4;
+      box-shadow: 0 5px 15px rgba(78, 205, 196, 0.2);
     }
 
     .step-number {
       position: absolute;
-      left: 15px;
-      top: 15px;
-      width: 30px;
-      height: 30px;
-      background: var(--primary-color);
+      left: 18px;
+      top: 20px;
+      width: 38px;
+      height: 38px;
+      background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
       color: white;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       font-weight: bold;
+      font-size: 16px;
+      box-shadow: 0 4px 10px rgba(255, 107, 107, 0.3);
     }
 
     .sources-list li {
-      padding: 8px 0;
+      padding: 10px 0;
       color: var(--text-light);
+      line-height: 1.6;
     }
+
+    .source-link {
+      color: #4ECDC4;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 16px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, rgba(78, 205, 196, 0.08) 0%, rgba(68, 160, 141, 0.08) 100%);
+      border: 2px solid rgba(78, 205, 196, 0.2);
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .source-link:hover {
+      color: #FF6B6B;
+      background: linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(255, 142, 83, 0.1) 100%);
+      border-color: rgba(255, 107, 107, 0.3);
+      transform: translateX(5px);
+      box-shadow: 0 4px 12px rgba(255, 107, 107, 0.2);
+    }
+
+    .source-platform {
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .source-type {
+      font-size: 13px;
+      opacity: 0.8;
+      flex: 1;
+    }
+
+    .external-icon {
+      font-size: 16px;
+      opacity: 0.7;
+      transition: transform 0.3s ease;
+    }
+
+    .source-link:hover .external-icon {
+      transform: translateX(3px);
+    }
+
+    /* 标签样式 */
+    .recipe-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 15px 0;
+    }
+    .recipe-tag {
+      display: inline-block;
+      padding: 4px 14px;
+      background: linear-gradient(135deg, #FFE66D 0%, #FFD93D 100%);
+      color: #856404;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    /* 食材勾选 */
+    .ingredient-item { padding: 14px; border-bottom: 1px solid rgba(240,230,216,0.6); border-radius: 8px; margin-bottom: 5px; transition: background 0.2s; }
+    .ingredient-item:hover { background: rgba(255,248,240,0.5); }
+    .ingredient-label { display: flex; align-items: center; gap: 12px; cursor: pointer; width: 100%; }
+    .ingredient-check { width: 20px; height: 20px; accent-color: #4ECDC4; cursor: pointer; flex-shrink: 0; }
+    .ingredient-text { font-size: 15px; transition: all 0.3s; }
+
+    /* 步骤时间线 */
+    .step-item { position: relative; padding: 20px 20px 20px 65px; margin-bottom: 0; background: linear-gradient(135deg, #FFF8F0 0%, #FFE8D6 100%); border-radius: 15px; border: 2px solid transparent; line-height: 1.7; transition: all 0.3s; margin-bottom: 15px; }
+    .step-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      left: 36px;
+      bottom: -17px;
+      width: 3px;
+      height: 17px;
+      background: linear-gradient(to bottom, #FF6B6B, #4ECDC4);
+      z-index: 1;
+    }
+    .step-item:hover { transform: translateX(10px); border-color: #4ECDC4; box-shadow: 0 5px 15px rgba(78,205,196,0.2); }
+
+    /* 来源卡片 */
+    .source-card {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 18px;
+      border-radius: 12px;
+      background: white;
+      text-decoration: none;
+      transition: all 0.3s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      width: 100%;
+    }
+    .source-card:hover { transform: translateX(8px); box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+    .source-icon { font-size: 24px; flex-shrink: 0; }
+    .source-info { flex: 1; display: flex; flex-direction: column; }
+    .source-info .source-platform { font-weight: 600; font-size: 15px; }
+    .source-info .source-type { font-size: 13px; color: #7f8c8d; }
+    .source-arrow { font-size: 18px; color: #bdc3c7; transition: all 0.3s; }
+    .source-card:hover .source-arrow { color: #FF6B6B; transform: translateX(4px); }
+    .sources-list li { padding: 6px 0; }
+
+    /* 营养盒子颜色 */
+    .nutrition-box:nth-child(1) { border-bottom: 3px solid #e74c3c; }
+    .nutrition-box:nth-child(2) { border-bottom: 3px solid #1abc9c; }
+    .nutrition-box:nth-child(3) { border-bottom: 3px solid #f39c12; }
+    .nutrition-box:nth-child(4) { border-bottom: 3px solid #9b59b6; }
   </style>
 </head>
 <body>
+  <!-- 导航栏 -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">🍽️ 营养餐推荐</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">首页</a>
+        <a href="about.html" class="nav-link">关于</a>
+      </div>
+    </div>
+  </nav>
+
   <div class="detail-container">
     <button class="btn btn-primary back-button" onclick="history.back()">← 返回</button>
 
     <div class="recipe-header">
       <h1 id="recipe-name">加载中...</h1>
       <p id="recipe-description"></p>
+      <div id="recipe-tags" class="recipe-tags"></div>
       <div class="recipe-meta">
         <span>📂 <span id="recipe-category"></span></span>
         <span>⏱️ <span id="recipe-time"></span></span>
@@ -186,6 +387,14 @@
       </ul>
     </div>
   </div>
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 营养餐推荐 &middot; <a href="about.html">关于我们</a> &middot; <a href="about.html#disclaimer">免责声明</a></p>
+      <p class="footer-sub">数据仅供参考，不构成医疗建议</p>
+    </div>
+  </footer>
 
   <script type="module">
     import { loadRecipes, getRecipeById } from './js/recommend.js';

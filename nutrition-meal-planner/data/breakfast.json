@@ -42,12 +42,14 @@
       {
         "platform": "下厨房",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.xiachufang.com/search/?keyword=番茄炒蛋"
       },
       {
         "platform": "USDA FoodData Central",
         "dataType": "营养数据",
-        "verified": true
+        "verified": true,
+        "url": "https://fdc.nal.usda.gov/"
       }
     ],
     "tags": [
@@ -104,12 +106,14 @@
       {
         "platform": "豆果美食",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.douguo.com/search/recipe/皮蛋瘦肉粥"
       },
       {
         "platform": "中国居民膳食指南",
         "dataType": "营养标准",
-        "verified": true
+        "verified": true,
+        "url": "http://dg.cnsoc.org/"
       }
     ],
     "tags": [
@@ -165,12 +169,14 @@
       {
         "platform": "下厨房",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.xiachufang.com/search/?keyword=全麦三明治"
       },
       {
         "platform": "Edamam",
         "dataType": "营养分析",
-        "verified": true
+        "verified": true,
+        "url": "https://www.edamam.com/"
       }
     ],
     "tags": [
@@ -218,12 +224,14 @@
       {
         "platform": "豆果美食",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.douguo.com/search/recipe/小米南瓜粥"
       },
       {
         "platform": "中国居民膳食指南",
         "dataType": "营养标准",
-        "verified": true
+        "verified": true,
+        "url": "http://dg.cnsoc.org/"
       }
     ],
     "tags": [
@@ -279,12 +287,14 @@
       {
         "platform": "下厨房",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.xiachufang.com/search/?keyword=鸡蛋灌饼"
       },
       {
         "platform": "USDA FoodData Central",
         "dataType": "营养数据",
-        "verified": true
+        "verified": true,
+        "url": "https://fdc.nal.usda.gov/"
       }
     ],
     "tags": [
@@ -335,12 +345,14 @@
       {
         "platform": "豆果美食",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.douguo.com/search/recipe/牛奶燕麦粥"
       },
       {
         "platform": "Edamam",
         "dataType": "营养分析",
-        "verified": true
+        "verified": true,
+        "url": "https://www.edamam.com/"
       }
     ],
     "tags": [
@@ -396,12 +408,14 @@
       {
         "platform": "下厨房",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.xiachufang.com/search/?keyword=韭菜盒子"
       },
       {
         "platform": "中国居民膳食指南",
         "dataType": "营养标准",
-        "verified": true
+        "verified": true,
+        "url": "http://dg.cnsoc.org/"
       }
     ],
     "tags": [
@@ -449,12 +463,14 @@
       {
         "platform": "豆果美食",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.douguo.com/search/recipe/豆浆油条"
       },
       {
         "platform": "USDA FoodData Central",
         "dataType": "营养数据",
-        "verified": true
+        "verified": true,
+        "url": "https://fdc.nal.usda.gov/"
       }
     ],
     "tags": [
@@ -510,12 +526,14 @@
       {
         "platform": "下厨房",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.xiachufang.com/search/?keyword=蔬菜鸡蛋饼"
       },
       {
         "platform": "Edamam",
         "dataType": "营养分析",
-        "verified": true
+        "verified": true,
+        "url": "https://www.edamam.com/"
       }
     ],
     "tags": [
@@ -563,12 +581,14 @@
       {
         "platform": "豆果美食",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.douguo.com/search/recipe/红豆薏米粥"
       },
       {
         "platform": "中国居民膳食指南",
         "dataType": "营养标准",
-        "verified": true
+        "verified": true,
+        "url": "http://dg.cnsoc.org/"
       }
     ],
     "tags": [

@@ -2,9 +2,13 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta name="theme-color" content="#FF6B6B">
+  <meta name="mobile-web-app-capable" content="yes">
   <title>关于我们 - 营养餐推荐</title>
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/dashboard.css">
+  <link rel="stylesheet" href="./css/mobile.css">
   <style>
     .about-container {
       max-width: 800px;
@@ -14,36 +18,78 @@
 
     .about-header {
       text-align: center;
-      padding: 40px 20px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: var(--shadow);
-      margin-bottom: 30px;
+      padding: 50px 30px;
+      background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 50%, #FFA07A 100%);
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06), 0 0 40px rgba(255, 107, 107, 0.2);
+      margin-bottom: 35px;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-header::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+      animation: headerGlow 8s ease-in-out infinite;
+    }
+
+    @keyframes headerGlow {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(-20px, -20px); }
     }
 
     .about-header h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
+      font-size: 36px;
+      margin-bottom: 15px;
+      position: relative;
+      z-index: 1;
+      font-weight: 700;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .about-header p {
+      position: relative;
+      z-index: 1;
+      font-size: 17px;
+      opacity: 0.95;
     }
 
     .about-section {
       background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: var(--shadow);
-      margin-bottom: 20px;
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      margin-bottom: 25px;
+      border: 1px solid rgba(240, 230, 216, 0.5);
+      transition: all 0.3s ease;
+    }
+
+    .about-section:hover {
+      box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+      transform: translateY(-3px);
     }
 
     .about-section h2 {
-      font-size: 24px;
-      margin-bottom: 15px;
+      font-size: 26px;
+      margin-bottom: 20px;
       color: var(--text-dark);
+      font-weight: 600;
+      padding-bottom: 12px;
+      border-bottom: 3px solid #FFE66D;
+      display: inline-block;
     }
 
     .about-section p {
       line-height: 1.8;
       color: var(--text-light);
-      margin-bottom: 15px;
+      margin-bottom: 18px;
+      font-size: 15px;
     }
 
     .about-section ul {
@@ -52,44 +98,74 @@
     }
 
     .about-section li {
-      padding: 10px 0;
-      padding-left: 25px;
+      padding: 14px 0;
+      padding-left: 35px;
       position: relative;
+      line-height: 1.7;
+      transition: all 0.2s ease;
+      border-radius: 8px;
+    }
+
+    .about-section li:hover {
+      background: rgba(255, 248, 240, 0.5);
+      padding-left: 40px;
     }
 
     .about-section li:before {
       content: "•";
       position: absolute;
-      left: 0;
+      left: 10px;
       color: var(--primary-color);
       font-weight: bold;
-      font-size: 20px;
+      font-size: 24px;
+      text-shadow: 0 2px 4px rgba(255, 107, 107, 0.3);
     }
 
     .warning-box {
-      background: #fff3cd;
-      border-left: 4px solid #ffc107;
-      padding: 20px;
-      margin: 20px 0;
-      border-radius: 4px;
+      background: linear-gradient(135deg, #fff3cd 0%, #ffe8a1 100%);
+      border-left: 5px solid #ffc107;
+      padding: 25px;
+      margin: 25px 0;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(255, 193, 7, 0.2);
     }
 
     .warning-box h3 {
       color: #856404;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+      font-size: 20px;
+      font-weight: 600;
     }
 
     .warning-box p {
       color: #856404;
-      margin: 8px 0;
+      margin: 10px 0;
+      line-height: 1.7;
+      font-size: 14px;
     }
 
     .back-button {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .back-button:hover {
+      transform: translateX(-5px);
     }
   </style>
 </head>
 <body>
+  <!-- 导航栏 -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">🍽️ 营养餐推荐</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">首页</a>
+        <a href="about.html" class="nav-link active">关于</a>
+      </div>
+    </div>
+  </nav>
+
   <div class="about-container">
     <button class="btn btn-primary back-button" onclick="location.href='index.html'">← 返回首页</button>
 
@@ -136,7 +212,7 @@
       </ul>
     </div>
 
-    <div class="warning-box">
+    <div class="warning-box" id="disclaimer">
       <h3>⚠️ 免责声明</h3>
       <p>• 本网站提供的营养建议仅供参考，不构成医疗建议</p>
       <p>• 个体营养需求因年龄、性别、活动量等因素而异</p>
@@ -158,5 +234,13 @@
       <p>我们期待您的反馈，帮助我们做得更好！</p>
     </div>
   </div>
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 营养餐推荐 &middot; <a href="about.html">关于我们</a> &middot; <a href="about.html#disclaimer">免责声明</a></p>
+      <p class="footer-sub">数据仅供参考，不构成医疗建议</p>
+    </div>
+  </footer>
 </body>
 </html>

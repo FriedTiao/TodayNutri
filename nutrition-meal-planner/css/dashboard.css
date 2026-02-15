@@ -3,100 +3,171 @@
 /* 头部 */
 .header {
   text-align: center;
-  padding: 40px 0;
-  background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
-  margin-bottom: 30px;
+  padding: 50px 30px;
+  background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 50%, #FFA07A 100%);
+  margin-bottom: 35px;
   border-radius: var(--card-radius);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow), 0 0 40px rgba(255, 107, 107, 0.2);
   color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  animation: headerGlow 8s ease-in-out infinite;
+}
+
+@keyframes headerGlow {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-20px, -20px); }
 }
 
 .header h1 {
-  font-size: 32px;
+  font-size: 36px;
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-weight: 700;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  letter-spacing: 1px;
 }
 
 .header .date {
-  color: rgba(255,255,255,0.9);
-  font-size: 16px;
+  color: rgba(255,255,255,0.95);
+  font-size: 17px;
+  position: relative;
+  z-index: 1;
+  font-weight: 500;
 }
 
 /* 营养总览卡片 */
 .nutrition-overview {
-  background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+  background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 50%, #3D9970 100%);
   color: white;
-  padding: 35px;
+  padding: 40px;
   border-radius: var(--card-radius);
-  margin-bottom: 30px;
-  box-shadow: var(--shadow);
+  margin-bottom: 35px;
+  box-shadow: var(--shadow), 0 0 40px rgba(78, 205, 196, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.nutrition-overview::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  border-radius: 50%;
 }
 
 .nutrition-overview h2 {
-  font-size: 22px;
-  margin-bottom: 25px;
+  font-size: 24px;
+  margin-bottom: 28px;
   font-weight: 600;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .calories-display {
   text-align: center;
-  margin: 20px 0;
+  margin: 25px 0;
+  position: relative;
+  z-index: 1;
 }
 
 .calories-number {
-  font-size: 48px;
+  font-size: 56px;
   font-weight: bold;
   display: block;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  letter-spacing: -1px;
 }
 
 .calories-label {
-  font-size: 18px;
-  opacity: 0.9;
+  font-size: 20px;
+  opacity: 0.95;
+  font-weight: 500;
 }
 
 .calories-target {
   text-align: center;
-  opacity: 0.8;
-  margin-top: 10px;
+  opacity: 0.85;
+  margin-top: 12px;
+  font-size: 15px;
+  position: relative;
+  z-index: 1;
 }
 
 /* 营养进度条 */
 .nutrition-bars {
-  margin-top: 20px;
+  margin-top: 25px;
+  position: relative;
+  z-index: 1;
 }
 
 .nutrition-item {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .nutrition-label {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5px;
-  font-size: 14px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .progress-bar {
-  height: 8px;
-  background: rgba(255,255,255,0.3);
-  border-radius: 4px;
+  height: 10px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 10px;
   overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .progress-fill {
   height: 100%;
-  background: white;
-  border-radius: 4px;
-  transition: width 0.5s ease;
+  background: linear-gradient(90deg, rgba(255,255,255,0.9) 0%, white 100%);
+  border-radius: 10px;
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 0 10px rgba(255,255,255,0.5);
+  position: relative;
+}
+
+.progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
 }
 
 /* 三餐网格 */
 .meals-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-bottom: 30px;
+  gap: 25px;
+  margin-bottom: 35px;
 }
 
 .meal-card {
@@ -104,40 +175,65 @@
   border-radius: var(--card-radius);
   overflow: hidden;
   box-shadow: var(--shadow);
-  transition: all 0.3s ease;
-  border: 1px solid var(--border-color);
+  transition: var(--transition);
+  border: 1px solid rgba(240, 230, 216, 0.5);
+  position: relative;
+}
+
+.meal-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, transparent 0%, rgba(255,107,107,0.03) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .meal-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px) scale(1.02);
   box-shadow: var(--shadow-hover);
+  border-color: rgba(255, 107, 107, 0.3);
+}
+
+.meal-card:hover::before {
+  opacity: 1;
 }
 
 .meal-header {
   background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
   color: white;
-  padding: 18px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .meal-type {
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .meal-calories-header {
   font-size: 14px;
   opacity: 0.95;
-  background: rgba(255,255,255,0.2);
-  padding: 4px 12px;
+  background: rgba(255,255,255,0.25);
+  padding: 6px 14px;
   border-radius: 20px;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
 }
 
 .meal-image-container {
   width: 100%;
-  height: 220px;
+  height: 240px;
   overflow: hidden;
   position: relative;
   background: linear-gradient(135deg, #FFF8F0 0%, #FFE8D6 100%);
@@ -147,22 +243,27 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: brightness(1.05) contrast(1.05);
 }
 
 .meal-card:hover .meal-image {
-  transform: scale(1.05);
+  transform: scale(1.1) rotate(1deg);
+  filter: brightness(1.1) contrast(1.1);
 }
 
 .meal-info {
-  padding: 20px;
+  padding: 24px;
+  position: relative;
+  z-index: 2;
 }
 
 .meal-name {
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   color: var(--text-dark);
+  line-height: 1.4;
 }
 
 .meal-meta {
@@ -170,52 +271,75 @@
   justify-content: space-between;
   color: var(--text-light);
   font-size: 14px;
-  margin-bottom: 18px;
-  padding: 10px 0;
-  border-top: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 20px;
+  padding: 12px 0;
+  border-top: 1px solid rgba(240, 230, 216, 0.6);
+  border-bottom: 1px solid rgba(240, 230, 216, 0.6);
 }
 
 .meal-actions {
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
 
 .meal-actions .btn {
   flex: 1;
   font-size: 14px;
-  padding: 10px;
-  border-radius: 8px;
-  font-weight: 500;
+  padding: 11px;
+  border-radius: 10px;
+  font-weight: 600;
 }
 
 /* 数据来源说明 */
 .data-sources {
-  background: linear-gradient(135deg, #FFF8F0 0%, #FFE8D6 100%);
-  padding: 30px;
+  background: linear-gradient(135deg, #FFF8F0 0%, #FFE8D6 50%, #FFD6BA 100%);
+  padding: 35px;
   border-radius: var(--card-radius);
   box-shadow: var(--shadow);
-  border: 1px solid var(--border-color);
+  border: 1px solid rgba(240, 230, 216, 0.8);
+  position: relative;
+  overflow: hidden;
+}
+
+.data-sources::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,230,109,0.1) 0%, transparent 70%);
+  animation: sourcesGlow 10s ease-in-out infinite;
+}
+
+@keyframes sourcesGlow {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(20px, 20px) rotate(180deg); }
 }
 
 .data-sources h3 {
-  font-size: 22px;
-  margin-bottom: 15px;
+  font-size: 24px;
+  margin-bottom: 18px;
   color: var(--text-dark);
   font-weight: 600;
+  position: relative;
+  z-index: 1;
 }
 
 .data-sources ul {
   list-style: none;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 1;
 }
 
 .data-sources li {
-  padding: 10px 0;
-  padding-left: 30px;
+  padding: 12px 0;
+  padding-left: 35px;
   position: relative;
   color: var(--text-dark);
   font-size: 15px;
+  line-height: 1.6;
 }
 
 .data-sources li:before {
@@ -224,42 +348,47 @@
   left: 0;
   color: #4ECDC4;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
+  text-shadow: 0 2px 4px rgba(78, 205, 196, 0.3);
 }
 
 .disclaimer {
   background: linear-gradient(135deg, #FFE66D 0%, #FFD93D 100%);
-  border-left: 4px solid #FF6B6B;
-  padding: 18px;
-  margin-top: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-left: 5px solid #FF6B6B;
+  padding: 20px;
+  margin-top: 25px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+  position: relative;
+  z-index: 1;
 }
 
 .disclaimer p {
-  margin: 5px 0;
+  margin: 6px 0;
   font-size: 14px;
   color: var(--text-dark);
   font-weight: 500;
+  line-height: 1.6;
 }
 
 .disclaimer a {
   color: #FF6B6B;
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.3s;
+  transition: all 0.3s;
+  border-bottom: 2px solid transparent;
 }
 
 .disclaimer a:hover {
   color: #FF8E53;
-  text-decoration: underline;
+  border-bottom-color: #FF8E53;
 }
 
 /* 页面加载动画 */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
@@ -268,7 +397,7 @@
 }
 
 .meal-card {
-  animation: fadeInUp 0.6s ease-out;
+  animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) backwards;
 }
 
 .meal-card:nth-child(1) {
@@ -287,9 +416,84 @@
 @keyframes progressFill {
   from {
     width: 0;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
 .progress-fill {
-  animation: progressFill 1s ease-out;
+  animation: progressFill 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
+
+/* 导航栏 */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 248, 240, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(240, 230, 216, 0.6);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-dark);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.nav-logo:hover { opacity: 0.8; }
+.nav-links { display: flex; gap: 8px; }
+.nav-link {
+  padding: 6px 16px;
+  border-radius: 10px;
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.nav-link:hover { color: var(--text-dark); background: rgba(255,107,107,0.08); }
+.nav-link.active { color: var(--primary-color); background: rgba(255,107,107,0.1); font-weight: 600; }
+
+/* 餐卡标签 */
+.meal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.meal-tag-pill {
+  display: inline-block;
+  padding: 2px 10px;
+  background: linear-gradient(135deg, #FFE66D 0%, #FFD93D 100%);
+  color: #856404;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* 页脚 */
+.site-footer {
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 20px;
+  color: var(--text-light);
+  font-size: 13px;
+  border-top: 1px solid rgba(240, 230, 216, 0.6);
+}
+.footer-inner { max-width: 1200px; margin: 0 auto; }
+.site-footer a { color: var(--primary-color); text-decoration: none; font-weight: 500; }
+.site-footer a:hover { text-decoration: underline; }
+.footer-sub { margin-top: 6px; font-size: 12px; opacity: 0.7; }

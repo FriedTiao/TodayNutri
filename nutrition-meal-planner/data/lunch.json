@@ -56,12 +56,14 @@
       {
         "platform": "下厨房",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.xiachufang.com/search/?keyword=宫保鸡丁"
       },
       {
         "platform": "USDA FoodData Central",
         "dataType": "营养数据",
-        "verified": true
+        "verified": true,
+        "url": "https://fdc.nal.usda.gov/"
       }
     ],
     "tags": [
@@ -123,12 +125,14 @@
       {
         "platform": "豆果美食",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.douguo.com/search/recipe/红烧排骨"
       },
       {
         "platform": "中国居民膳食指南",
         "dataType": "营养标准",
-        "verified": true
+        "verified": true,
+        "url": "http://dg.cnsoc.org/"
       }
     ],
     "tags": [
@@ -186,12 +190,14 @@
       {
         "platform": "下厨房",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.xiachufang.com/search/?keyword=番茄牛腩"
       },
       {
         "platform": "Edamam",
         "dataType": "营养分析",
-        "verified": true
+        "verified": true,
+        "url": "https://www.edamam.com/"
       }
     ],
     "tags": [
@@ -249,12 +255,14 @@
       {
         "platform": "豆果美食",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.douguo.com/search/recipe/鱼香肉丝"
       },
       {
         "platform": "USDA FoodData Central",
         "dataType": "营养数据",
-        "verified": true
+        "verified": true,
+        "url": "https://fdc.nal.usda.gov/"
       }
     ],
     "tags": [
@@ -315,12 +323,14 @@
       {
         "platform": "下厨房",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.xiachufang.com/search/?keyword=糖醋里脊"
       },
       {
         "platform": "中国居民膳食指南",
         "dataType": "营养标准",
-        "verified": true
+        "verified": true,
+        "url": "http://dg.cnsoc.org/"
       }
     ],
     "tags": [
@@ -377,12 +387,14 @@
       {
         "platform": "豆果美食",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.douguo.com/search/recipe/麻婆豆腐"
       },
       {
         "platform": "Edamam",
         "dataType": "营养分析",
-        "verified": true
+        "verified": true,
+        "url": "https://www.edamam.com/"
       }
     ],
     "tags": [
@@ -439,12 +451,14 @@
       {
         "platform": "下厨房",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.xiachufang.com/search/?keyword=青椒肉丝"
       },
       {
         "platform": "USDA FoodData Central",
         "dataType": "营养数据",
-        "verified": true
+        "verified": true,
+        "url": "https://fdc.nal.usda.gov/"
       }
     ],
     "tags": [
@@ -501,12 +515,14 @@
       {
         "platform": "豆果美食",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.douguo.com/search/recipe/红烧茄子"
       },
       {
         "platform": "中国居民膳食指南",
         "dataType": "营养标准",
-        "verified": true
+        "verified": true,
+        "url": "http://dg.cnsoc.org/"
       }
     ],
     "tags": [
@@ -563,12 +579,14 @@
       {
         "platform": "下厨房",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.xiachufang.com/search/?keyword=回锅肉"
       },
       {
         "platform": "Edamam",
         "dataType": "营养分析",
-        "verified": true
+        "verified": true,
+        "url": "https://www.edamam.com/"
       }
     ],
     "tags": [
@@ -626,12 +644,14 @@
       {
         "platform": "豆果美食",
         "dataType": "菜谱参考",
-        "verified": true
+        "verified": true,
+        "url": "https://www.douguo.com/search/recipe/西红柿炖牛肉"
       },
       {
         "platform": "USDA FoodData Central",
         "dataType": "营养数据",
-        "verified": true
+        "verified": true,
+        "url": "https://fdc.nal.usda.gov/"
       }
     ],
     "tags": [

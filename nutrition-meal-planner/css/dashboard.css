@@ -124,9 +124,21 @@
 .nutrition-label {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 8px;
   font-size: 15px;
   font-weight: 500;
+}
+
+.nutrition-name {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.nutrition-values {
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
 }
 
 .progress-bar {

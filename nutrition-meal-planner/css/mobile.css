@@ -2,119 +2,109 @@
 
 @media (max-width: 768px) {
   .container {
-    padding: 12px;
+    padding: 20px 15px;
   }
 
   /* 头部 */
   .header {
-    padding: 30px 20px;
     margin-bottom: 25px;
+    padding: 10px 0;
   }
 
   .header h1 {
-    font-size: 24px;
-    line-height: 1.3;
+    font-size: 2rem;
+    line-height: 1.2;
   }
 
   .header .date {
-    font-size: 14px;
+    font-size: 1rem;
+    padding: 4px 12px;
   }
 
   /* 营养总览 */
   .nutrition-overview {
     padding: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 
   .nutrition-overview h2 {
-    font-size: 20px;
+    font-size: 1.3rem;
     margin-bottom: 20px;
   }
 
   .calories-number {
-    font-size: 40px;
+    font-size: 3.5rem;
   }
 
   .calories-label {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .calories-target {
-    font-size: 14px;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
   }
 
-  .nutrition-label {
-    font-size: 13px;
-    flex-wrap: wrap;
-    gap: 4px;
+  .nutrition-bars {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 15px;
   }
 
-  .nutrition-name {
-    font-size: 14px;
-    width: 100%;
-    margin-bottom: 4px;
+  .nutrition-label span:first-child {
+    font-size: 1.1rem;
   }
-
-  .nutrition-values {
-    width: 100%;
-    justify-content: space-between;
-    font-size: 13px;
+  
+  .nutrition-label span:last-child {
+    font-size: 0.85rem;
   }
 
   /* 三餐网格改为单列 */
   .meals-grid {
     grid-template-columns: 1fr;
-    gap: 18px;
-    margin-bottom: 25px;
-  }
-
-  .meal-card {
-    margin-bottom: 0;
+    gap: 25px;
+    margin-bottom: 30px;
   }
 
   .meal-card:hover {
-    transform: translateY(-5px) scale(1);
+    transform: none; /* 移动端取消悬浮位移 */
   }
 
   .meal-header {
-    padding: 16px;
+    padding: 12px 15px;
   }
 
   .meal-type {
-    font-size: 17px;
+    font-size: 0.9rem;
   }
 
   .meal-calories-header {
-    font-size: 13px;
-    padding: 5px 12px;
+    font-size: 0.85rem;
+    padding: 3px 8px;
   }
 
   .meal-image-container {
-    height: 220px;
+    height: 200px;
   }
 
   .meal-info {
-    padding: 18px;
+    padding: 15px;
   }
 
   .meal-name {
-    font-size: 18px;
-    margin-bottom: 12px;
+    font-size: 1.15rem;
+    margin-bottom: 8px;
   }
 
   .meal-meta {
-    font-size: 13px;
-    padding: 10px 0;
-    margin-bottom: 16px;
-  }
-
-  .meal-actions {
+    font-size: 0.85rem;
+    margin-bottom: 15px;
     gap: 10px;
   }
 
   .meal-actions .btn {
-    padding: 12px;
-    font-size: 14px;
+    padding: 10px;
+    font-size: 0.9rem;
   }
 
   /* 数据来源 */
@@ -123,107 +113,55 @@
   }
 
   .data-sources h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
+    font-size: 1rem;
   }
 
+  .data-sources ul {
+    gap: 10px;
+  }
+  
   .data-sources li {
-    font-size: 14px;
-    padding: 10px 0;
+    font-size: 0.85rem;
   }
 
   .disclaimer {
-    padding: 16px;
-    margin-top: 20px;
+    margin-top: 15px;
+    font-size: 0.8rem;
   }
 
-  .disclaimer p {
-    font-size: 13px;
-  }
-
-  /* 按钮优化 */
-  .btn {
-    padding: 12px 20px;
-    font-size: 14px;
-    border-radius: 10px;
-  }
-
-  /* 触摸优化 - 增大点击区域 */
-  .btn-detail,
-  .btn-replace {
-    min-height: 44px;
-  }
-}
-
-/* 平板适配 */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .meals-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .meal-card:last-child {
-    grid-column: 1 / -1;
-    max-width: 50%;
-    margin: 0 auto;
-  }
-}
-
-/* 触摸优化 */
-@media (hover: none) and (pointer: coarse) {
-  .btn {
-    padding: 12px 24px;
-    font-size: 16px;
-  }
-
-  .meal-actions .btn {
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  /* 增大可点击区域 */
-  .meal-card {
-    cursor: pointer;
-  }
-}
-
-/* 详情页移动端适配 */
-@media (max-width: 768px) {
+  /* 详情页移动端适配 */
   .detail-container {
-    padding: 12px;
+    padding: 15px;
   }
 
   .back-button {
     margin-bottom: 20px;
     width: 100%;
-    justify-content: center;
+    padding: 10px;
   }
 
   .recipe-image {
     height: 250px;
-    border-radius: 15px;
-    margin-bottom: 20px;
   }
 
-  .recipe-header {
-    padding: 25px 20px;
-    margin-bottom: 20px;
+  .recipe-info-container {
+    padding: 20px;
   }
 
   .recipe-header h1 {
-    font-size: 24px;
-    line-height: 1.3;
-    margin-bottom: 12px;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
   }
 
   .recipe-header p {
-    font-size: 14px;
+    font-size: 1rem;
+    margin-bottom: 20px;
   }
 
   .recipe-meta {
     flex-wrap: wrap;
-    gap: 12px;
-    font-size: 14px;
-    margin-top: 15px;
+    gap: 15px;
+    font-size: 0.9rem;
   }
 
   .section {
@@ -232,286 +170,90 @@
   }
 
   .section h2 {
-    font-size: 20px;
+    font-size: 1.3rem;
     margin-bottom: 20px;
   }
 
   .nutrition-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-  }
-
-  .nutrition-box {
-    padding: 16px;
-  }
-
-  .nutrition-box .value {
-    font-size: 24px;
-  }
-
-  .nutrition-box .label {
-    font-size: 13px;
-  }
-
-  .ingredients-list,
-  .steps-list {
-    padding-left: 0;
-  }
-
-  .ingredients-list li {
-    padding: 12px;
-    font-size: 14px;
-  }
-
-  .steps-list li {
-    padding: 16px;
-    padding-left: 55px;
-    margin-bottom: 12px;
-    font-size: 14px;
-    line-height: 1.6;
-  }
-
-  .step-number {
-    width: 32px;
-    height: 32px;
-    font-size: 14px;
-    left: 16px;
-  }
-
-  .sources-list li {
-    padding: 8px 0;
-    font-size: 14px;
-  }
-
-  .source-link {
-    padding: 14px 12px;
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
-  }
-
-  .source-platform {
-    font-size: 15px;
-  }
-
-  .source-type {
-    font-size: 12px;
-  }
-
-  .external-icon {
-    position: absolute;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .source-link {
-    position: relative;
-  }
-
-  /* 关于页面移动端 */
-  .about-container {
-    padding: 12px;
-  }
-
-  .about-header {
-    padding: 30px 20px;
-    margin-bottom: 25px;
-  }
-
-  .about-header h1 {
-    font-size: 24px;
-    line-height: 1.3;
-  }
-
-  .about-header p {
-    font-size: 14px;
-  }
-
-  .about-section {
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-
-  .about-section h2 {
-    font-size: 20px;
-    margin-bottom: 18px;
-  }
-
-  .about-section p {
-    font-size: 14px;
-    line-height: 1.7;
-  }
-
-  .about-section li {
-    padding: 12px 0;
-    padding-left: 30px;
-    font-size: 14px;
-  }
-
-  .warning-box {
-    padding: 18px;
-    margin: 20px 0;
-  }
-
-  .warning-box h3 {
-    font-size: 18px;
-    margin-bottom: 12px;
-  }
-
-  .warning-box p {
-    font-size: 13px;
-    line-height: 1.6;
-  }
-}
-
-/* 小屏手机适配 (iPhone SE等) */
-@media (max-width: 375px) {
-  .header h1 {
-    font-size: 20px;
-  }
-
-  .calories-number {
-    font-size: 36px;
-  }
-
-  .meal-name {
-    font-size: 16px;
-  }
-
-  .nutrition-grid {
-    gap: 10px;
-  }
-
-  .nutrition-box {
-    padding: 12px;
-  }
-
-  .nutrition-box .value {
-    font-size: 20px;
-  }
-}
-
-/* iPhone XR/11/12/13/14 适配 (414x896) */
-@media (min-width: 376px) and (max-width: 428px) {
-  .container {
-    padding: 15px;
-  }
-
-  .header {
-    padding: 35px 20px;
-  }
-
-  .header h1 {
-    font-size: 26px;
-  }
-
-  .nutrition-overview {
-    padding: 25px;
-  }
-
-  .calories-number {
-    font-size: 44px;
-  }
-
-  .meal-image-container {
-    height: 240px;
-  }
-
-  .meal-name {
-    font-size: 19px;
-  }
-
-  .section h2 {
-    font-size: 22px;
-  }
-}
-
-/* 横屏适配 */
-@media (max-width: 768px) and (orientation: landscape) {
-  .header {
-    padding: 20px;
-  }
-
-  .header h1 {
-    font-size: 22px;
-  }
-
-  .nutrition-overview {
-    padding: 20px;
-  }
-
-  .meals-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
 
-  .meal-image-container {
-    height: 180px;
+  .nutrition-box {
+    padding: 15px 10px;
+  }
+
+  .nutrition-box .value {
+    font-size: 1.5rem;
+  }
+
+  .nutrition-box .label {
+    font-size: 0.85rem;
+  }
+
+  .ingredients-list {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-list li {
+    padding: 15px 15px 15px 50px;
+    font-size: 0.95rem;
+  }
+
+  .steps-list li::before {
+    left: 10px;
+    top: 15px;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 0.85rem;
+  }
+
+  /* 关于页面移动端 */
+  .about-container {
+    padding: 15px;
+  }
+
+  .about-header {
+    padding: 40px 15px;
+    margin-bottom: 30px;
+  }
+
+  .about-header h1 {
+    font-size: 2rem;
+  }
+
+  .about-header p {
+    font-size: 1rem;
+  }
+
+  .about-section {
+    padding: 25px 20px;
+    margin-bottom: 20px;
+  }
+
+  .about-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .about-section p, 
+  .about-section li {
+    font-size: 0.95rem;
   }
 }
 
-/* 防止文本选择（提升移动端体验） */
-@media (hover: none) and (pointer: coarse) {
-  .meal-card,
-  .btn {
-    -webkit-tap-highlight-color: transparent;
-    user-select: none;
-  }
-
-  /* 优化触摸反馈 */
-  .btn:active {
-    transform: scale(0.95);
-  }
-
-  .meal-card:active {
-    transform: scale(0.98);
-  }
-}
-
-/* ===== 新增元素响应式 ===== */
-
-/* 导航栏移动端 */
-@media (max-width: 768px) {
-  .site-nav .nav-inner {
-    padding: 10px 15px;
-  }
-  .nav-logo { font-size: 17px; }
-  .nav-link { padding: 5px 12px; font-size: 13px; }
-
-  /* 餐卡标签 */
-  .meal-tags { gap: 4px; margin-bottom: 10px; }
-  .meal-tag-pill { font-size: 10px; padding: 2px 8px; }
-
-  /* 页脚 */
-  .site-footer { padding: 20px 15px; font-size: 12px; }
-  .footer-sub { font-size: 11px; }
-
-  /* 详情页标签 */
-  .recipe-tags { gap: 6px; margin: 10px 0; }
-  .recipe-tag { font-size: 12px; padding: 3px 10px; }
-
-  /* 食材勾选 */
-  .ingredient-label { gap: 10px; }
-  .ingredient-check { width: 18px; height: 18px; }
-  .ingredient-text { font-size: 14px; }
-
-  /* 步骤时间线 */
-  .step-item { padding-left: 55px; }
-  .step-item:not(:last-child)::after { left: 31px; }
-
-  /* 来源卡片 */
-  .source-card { padding: 12px 14px; gap: 10px; }
-  .source-icon { font-size: 20px; }
-  .source-info .source-platform { font-size: 14px; }
-  .source-info .source-type { font-size: 12px; }
-}
-
+/* 小屏手机适配 */
 @media (max-width: 375px) {
-  .nav-logo { font-size: 15px; }
-  .nav-link { padding: 4px 8px; font-size: 12px; }
-  .meal-tag-pill { font-size: 9px; }
-  .recipe-tag { font-size: 11px; }
+  .calories-number {
+    font-size: 3rem;
+  }
+  
+  .meal-name {
+    font-size: 1.1rem;
+  }
+  
+  .recipe-header h1 {
+    font-size: 1.6rem;
+  }
 }
